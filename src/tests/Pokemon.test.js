@@ -64,10 +64,7 @@ describe('Teste do component Pokemon', () => {
     const typeCheck = screen.getAllByText(/electric/i);
     expect(typeCheck[0].textContent).toBe('Electric');
     userEvent.click(typeCheck[1]);
-
-    // testes
     const pikachuImg1 = screen.getByRole('img', { name: /pikachu sprite/i });
-    // console.log(pikachuImg1.src);
     expect(pikachuImg1.src).toBe('https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png');
   });
 });
