@@ -49,5 +49,6 @@ describe('Teste do component Pokedex', () => {
     renderWithRouter(<App />);
     const allButton = screen.getByRole('button', { name: /all/i });
     expect(allButton).toBeInTheDocument();
+    userEvent.click(allButton);
   });
 });
